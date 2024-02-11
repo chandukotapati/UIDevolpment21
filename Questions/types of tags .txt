@@ -63,3 +63,22 @@ span tag used for highlighting text and we have to style it explicity
     big {
         font-size: larger;
     }
+
+
+  12. Diff b/w sup and sub tag?
+    Note: For Mathematical and Chemaical formuals we ise sup tag and sub tag
+    sup {
+        vertical-align: super;
+        font-size: smaller;
+    }
+    sub {
+        vertical-align: sub;
+        font-size: smaller;
+    }
+
+13. Diff b/w pre and code?
+    Note: Used for Computer Code
+
+14. Diff b/w br and hr code?
+    Note: br and hr tags are unpaired tag 
+      
