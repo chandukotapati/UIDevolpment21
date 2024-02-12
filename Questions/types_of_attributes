@@ -1,0 +1,32 @@
+1. what is bdo tag?
+Note: bdo tag is bi-directional tag, this tag contains attributes 
+      lie dir="rtl" and dir="ltr"
+
+2. what is abbr tag and acronym tag?
+Note:
+    schemtaic tag
+    abbr[title] {
+        text-decoration: underline dotted;
+    }
+    non-schemtaic tag
+    acronym[title] {
+        text-decoration: underline dotted;
+    }
+
+3. what is image tag and figure tag (figute caption)?
+   src="" alt=""
+   Note: we can load images in two ways they are like relative and absolute
+
+4. what is iframe tag?
+   Note: For google maps and streaming videos(youtube) we use iframe tag
+   Note: Probably we not use iframe tag for loading other html files bcoz it contains mutiple parent tags 
+    Attributes : frameborder="1" src=""
+    
+5. Diff b/w audio tag and video tag?
+   Attributes:src = "", control, loop, mute, autoplay
+
+6. What is Anchor tag?
+   Note: We can redirect from one to another page, 
+   href="https:www.google.com" target="_self"
+
+# Tags, Attribute Tag, List Tags(specifications), Form Tags(user purpose), Table Tags(Database), DataList(olx, amazon, flipkart), Dropdown(ecommerce apps)
