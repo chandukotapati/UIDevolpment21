@@ -1,0 +1,7 @@
+Form Tags:
+for="fname" id="fname"
+name="f_name"
+required
+placeholder
+type="text" etc…
+autocomplete="off"
