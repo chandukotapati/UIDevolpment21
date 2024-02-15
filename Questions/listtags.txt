@@ -3,3 +3,7 @@ LIstTags: ul, ol, dl
 ul: type=none, type="square", type="circle"
 ol: type="A", type="a", type="i", type="I", start="3"
 li: value="226" 
+
+
+all list tags: (specifications / content/ header / footer)
+ul, ol, li, dl, dt, dd

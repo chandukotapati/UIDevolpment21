@@ -1,0 +1,8 @@
+drop down tags:
+select, option, option-group
+Attributes:
+select: size="3" multiple autofocus
+
+option: disabled, selected, label, value, name, title
+
+option-group : label

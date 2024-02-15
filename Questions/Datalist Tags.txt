@@ -1,0 +1,5 @@
+
+datalist tags:
+data-list tag and option tag and input tag
+Attributes:
+list="products" value="product" id="products"

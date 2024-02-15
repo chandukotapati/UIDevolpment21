@@ -1,0 +1,14 @@
+Agenda:
+Schematic Tags:
+
+nav bar
+main tag
+header tag
+footer tag
+section tag
+ul and li tag
+div tag
+picture tag and figure tag and figure caption and source (media="", srcset="")
+address tag and article tag
+details and summary (attributes open)
+a tag
