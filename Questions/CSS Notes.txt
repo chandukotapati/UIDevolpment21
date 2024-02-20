@@ -1,0 +1,17 @@
+Types of styles;
+inline
+internal
+external
+
+priority:
+inline is having higher priority compare to internal and external
+internal is having higher priority compare to external
+external is lower priority compare to …. internal and inline
+
+Types of Selectors:
+Core Selectors :
+global
+tag
+id
+class
+grouping
