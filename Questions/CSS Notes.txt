@@ -15,3 +15,21 @@ tag
 id
 class
 grouping
+
+Css  Selectors 
+1.Relation Selector
+    a. adjacent sibling selector(+)
+    b .general sibling selector(~)
+    c . child Selector(>)
+    d. descendant Selector(combination b/w  2 tags)
+
+2. inheritance selector
+
+3. initial selector
+
+4.Attribute Selector
+   a .has Attribute [href]
+   b . Attribute value equals to [target="_blank"]
+   c . Attribute value start with [name^="us"] 
+   d . Attribute value Ends with [href$='in']
+   e  Attribute value Contains [type *="email"]
