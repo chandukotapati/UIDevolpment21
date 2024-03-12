@@ -1,0 +1,62 @@
+body{
+    background-image: url("../example/Images/rcb.avif");
+    background-size: cover;
+    height: 100vh;
+}
+
+section, div{
+    display: flex;
+    flex: 1;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+div:nth-child(1){
+    flex: 2;
+}
+
+nav{
+    position: relative;
+    top: 20px;
+}
+
+img{
+    width: 140px;
+}
+
+div{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body:hover div{
+    opacity: 1;
+}
+
+.event-text{
+    animation: moveLeftToRight 1.5s ease-in-out forwards;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+@keyframes moveLeftToRight{
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.event-container{
+    display: block;
+    position: relative;
+    top: 120px;
+}
