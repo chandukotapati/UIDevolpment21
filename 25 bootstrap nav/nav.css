@@ -1,5 +1,5 @@
 header{
-    background-image: url("../example/Images/virat\ kohli2.jpg");
+    background-image: url("./Images/1.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -29,4 +29,33 @@ h1, h3{
 .d-flex{
     margin-left: 10px;
     margin-top: 30px;
+}
+
+.card-conatiner{
+    display: flex;
+}
+
+.cards-space{
+    margin-right: 20px;
+}
+
+.card-body{
+    color: lightslategray;
+}
+
+a{
+    color: slateblue;
+}
+
+@media screen and (min-width:375px) and (max-width:667px){
+    
+    .card-conatiner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{
+        margin: 10px;
+    }
 }
