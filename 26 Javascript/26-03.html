@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var firstName = 'jayeesh';
+
+        var lastName;
+
+         console.log(firstName); //jayeesh
+
+        firstName = 'lokesh';
+
+        console.log(firstName);  //lokesh
+
+        var rank = 420;
+
+        console.log(typeof rank); //number
+
+        var isActive = false;
+
+        console.log(typeof isActive);//bollean
+
+        var meetingName = null;
+
+        var names = ['lokesh', 'Manoj', 'ratna', 'kamal'];
+
+        console.log(names);  //Array(4)0: "lokesh"1: "Manoj"2: "ratna"3: "kamal"   length: 4
+
+        console.log(names[2]);    //ratna
+
+        names[1] = 'yeswanth'  //Array(4)0: "lokesh"1: "yeswanth"2: "ratna"3: "kamal"   length: 4
+
+
+        console.log(names);
+
+        var person = ['bhargav', 'full stack', 'python', '9703477***', '9:00am', '420'];
+
+        var nums = [69, 90, 67, 78, 99];
+
+        var matrices = [[89, 90], [90, 34], [67, 89]];
+
+        var personInfo = {
+            name: 'Rupesh',
+            courseName: 'python',
+            batchName: 'python-2404',
+            startTime: '8:00Am',
+            mobileNo: '98874561',
+            isEnrolled: true,
+            id: '420',
+            address: {
+                area: 'KPHB',
+                city: 'HYD',
+                pinCode: 522265
+            },
+            enrolledCourses: ['Mean Stack', 'Devops']
+        };
+
+        console.log(personInfo['startTime'], personInfo['mobileNo']);
+
+        console.log(personInfo.address.pinCode);
+
+        var meetings = [
+            {
+                type: 'Recurring',
+                meetingName: 'Python-08:00am',
+                meetingId: 8594672655
+            },
+            {
+                type: 'Recurring',
+                meetingName: 'Devops-10:00am',
+                meetingId: 8594672655
+            },
+            {
+                type: 'Recurring',
+                meetingName: 'React-07:00am',
+                meetingId: 8594672655
+            }
+        ];
+
+        console.log(meetings[2].meetingName )
+
+
+
+    </script>
+</body>
+
+</html>

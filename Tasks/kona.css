@@ -1,0 +1,490 @@
+.container{
+    
+    border: 2px solid rgb(218, 29, 29);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 5px 50px  10px rgb(250, 119, 119);
+    
+}
+.body{
+    position: fixed;
+}
+
+.child_1,.container{
+    display: flex;
+    flex: 1;
+    font-size:16px;
+    
+}
+select{
+    font-weight: bold;
+    position: relative;
+    left: 400px;
+    margin: 20px;
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    background-color: white;
+    
+}
+#price{
+    position: relative;
+    left: 445px;
+    top: 27px;
+    font-weight: bold;
+}
+#btn{
+    position: relative;
+    left: 500px;
+    top: 20px;
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid red;
+    color: white;
+}
+#btn:hover{
+    background-color:orange;
+}
+#logo{
+    font-size: 55px;
+    position: relative;
+    left: 150px;
+    top: 3px;
+    
+    font-weight: bold;
+}
+#logo,b{
+    animation: gogreen 3s infinite alternate;
+    animation-iteration-count:50;          
+}
+@keyframes gogreen {
+   
+    70% {
+        color:red;
+      }
+      30% {
+        color:black
+      }
+      
+}
+
+/* ---------------------------         main         ----------------------------------  */
+.jan{
+   
+    width: 650px;
+    height: 500px;
+    border: 2px solid white;
+    background-color: white;
+    z-index: 1;
+    
+}
+.container2,.container{
+    z-index: 2;
+    background-color: white;
+}
+span{
+    font-size:38px;
+    position: relative;
+    top: 130px;
+    left: 165px;
+    font-weight: bold;
+}
+b{
+    color: rgb(255, 0, 0);
+}
+p{
+    position: relative;
+    top: 140px;
+    left: 170px;
+    line-height: 5px;
+    color:grey;
+    font-size: 20px;
+   
+}
+#sun{
+    width: 115px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: bold;
+    border:2px solid red;
+}
+#mon{
+    
+    margin-left: 30px;
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    color:red;
+    font-weight: bold;
+    background-color: white;
+    border:2px solid red;
+    font-size: 15px;
+}
+.newbt{
+    position: relative;
+    top: 160px;
+    left: 160px;
+}
+.img1{
+    position: relative;
+    left: 650px;
+    bottom: 420px;
+}
+.kum{
+    background-color:white;
+    position: relative;
+    top: 100px;
+    
+}
+
+/*--------------------------      cards    ---------------------  */
+.cardsmain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: 55px;
+    bottom: 150px;
+    text-align: center;
+}
+.card1,.card2,.card3{
+    height: 400px;
+    width: 320px;
+    background-color:white;
+    border-radius: 15px;
+    position: relative;
+    left: 120px;
+    border: 1px solid gainsboro;
+    box-shadow: 5px 5px 50px  10px rgb(195, 191, 191);
+
+}
+.card2{
+    position: relative;
+    left:65px;
+}
+.card3{
+    position: relative;
+    left:10px;
+
+}
+.imgcards{
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+}
+.lms{
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+}
+/*-------------------------   Features   --------------------------------*/
+.features{
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    position: relative;
+    bottom: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.fet{
+    position: relative;
+    bottom: 50px;
+}
+i{
+    font-weight: bold;
+    font-style: normal;
+    font-size:13px;
+    color: gray;
+    position: relative;
+    top: 130px;
+    right: 160px;
+}
+/*----  Section 3 ----------------*/
+
+
+.third_sec,.opt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.oc,.cm,.db{
+    position: relative;
+    top: 70px;
+
+}
+.oc,.db{
+    position: relative;
+    left: 20px;
+}
+.img_opt{
+    position: relative;
+    left: 200px;
+}
+.db{
+    position: relative;
+    left: 30px;
+
+}
+/*----  Section 4 ----------------*/
+.four_sec{
+    position: relative;
+    top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+h4{
+
+    position: relative;
+    left: 20px;
+}
+/*----------------- Round img -----------------------------*/
+.round{
+    position: relative;
+    top: 350px;
+    border-radius: 10px;
+    box-shadow: -5px -10px white;
+}
+h6{
+    font-size: 27px;
+    text-align: center;
+    position: relative;
+    bottom: 380px;
+    color: red;
+    font-weight: bold;
+}
+/*----------------- Section 5 -----------------------------*/
+.secfive{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: 320px;
+    bottom: 200px;
+}
+.school{
+    position: relative;
+    left: 90px;
+    bottom: 50px;
+}
+
+.clg{
+    position: relative;
+    right: 60px;
+    bottom: 40px;
+}
+.crm{
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+}
+.shape{
+    border: 1px solid white;
+    font-size: 20;
+    border-radius: 65%;
+    width: 60px;
+    background-color: white;
+    position: relative;
+}
+#shp1{
+    position: relative;
+    top: 10px;
+    right: 80px;
+}
+#t_i,#s_c{
+    font-weight: bold;
+    position: relative;
+    right: 35px;
+}
+#mcr{
+    font-weight: bold;
+}
+.secsix{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+}
+.shape1,#s_c1{
+    position: relative;
+    right: 150px;
+    top: 20px;
+    font-weight: bold;
+}
+#t_i1{
+    position: relative;
+    right: 30px;
+    font-weight: bold;
+}
+#t_i2{
+    position: relative;
+    right: 160px;
+    top: 20px;
+    font-weight: bold;
+}
+#t_i18{
+    position: relative;
+    right: 95px;
+    top: 10px;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
+/*---------------  Clients-----------------------*/
+.cli_1,.cli_2,.cli_3,.cli_4{
+    width: 150px;
+    position: relative;
+    left: 70px;
+}
+.client{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    right: 120px;
+    top: 30px;
+}
+.cli_1{
+    position: relative;
+    left: 500px;
+}
+.cli_2{
+    position: relative;
+    left: 340px;
+}
+.cli_3{
+    position: relative;
+    left: 150px;
+    bottom: 10px;
+}
+.cli_4{
+    position: relative;
+    left: -10px;
+}
+.insidediv>img{
+    position: relative;
+    top: 30px;
+    height: 260px;
+
+    width: 100%; 
+}
+.learn{
+    color:white;
+    font-size: 24px;
+    position: relative;
+    bottom: 200px;
+    left: 640px;
+    font-weight: bold;
+    margin: 0px;
+}
+.free{
+    position: relative;
+    bottom: 100px;
+    left: 200px;
+    width: 140px;
+    height: 36px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    color: red;
+}
+
+/*---------------  Footer    -----------------------*/
+.ninediv{
+    border: 1px solid rgb(231, 223, 223);
+    height: 400px;
+    position: relative;
+    bottom: 37px;
+    background-color: white;
+    box-shadow: 2px 2px solid red;
+
+}
+#fo_kona{
+    position: relative;
+    top: 100px;
+    left: 90px;
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+}
+.adj_ft{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    position: relative;
+    left: 450px;
+    top: 65px;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+.end{
+    font-size:15px;
+    position: relative;
+    right: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    list-style-type: none;
+}
+.end_1,.end_2,.end_3{
+    position: relative;
+    right: 15px;
+    line-height: 55px;
+    font-size: 15px;
+    font-weight: normal;
+    list-style-type: none;
+
+}
+#end_1{
+    position: relative;
+    right: 60px;
+}
+#end_2{
+    position: relative;
+    right: 80px;
+
+
+}
+.end_2{
+    position: relative;
+    left: 130px;
+    bottom: 140px;
+    font-size: 30px;
+}
+#fb,#tw,#ins,#linkdin{
+    font-size: 28px;
+    position: relative;
+right: 120px;
+}
+
+#fb{
+    color: blue;
+}
+#tw{
+    color: black;
+}
+#ins{
+    color: rgb(185, 45, 106);
+}
+#linkdin{
+    color:blueviolet
+}
+
+
+

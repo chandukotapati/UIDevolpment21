@@ -1,0 +1,65 @@
+Variables:
+
+    var variableName = value;
+
+let & const - ES6
+
+    let variableName = value;
+
+    const variableName = value;
+
+Scope: Visibility of value.
+
+1. Global Scope: Variables are available globally. - var
+2. Block Scope: Variiables are available only within block. ({          }) - let and const
+3. Function Scope: Variables declared in functions are accessed only within the function. - var let const
+
+Hoisting: In JavaScript, hoisting refers to the built-in behavior of the language through which declarations of functions, variables, and classes are moved to the top of their scope – all before code execution. In turn, this allows us to use functions, variables, and classes before they are declared.
+
+Control Statements: JavaScript control statement is used to control the execution of a program based on a specific condition. If the condition meets then a particular block of action will be executed otherwise it will execute another block of action that satisfies that particular condition.
+
+1. Conditional Statements: These statements are used for decision-making, a decision
+n is made by the conditional statement based on an expression that is passed. Either YES or NO.
+
+2. Looping Statements: This is a statement that iterates repeatedly until a condition is met. Simply said, if we have an expression, the statement will keep repeating itself until and unless it is satisfied.
+
+
+1. Conditional Statements:
+> if 
+> if else
+> if else if 
+> switch
+
+    if:
+
+        if (expression) {
+            // Statements...
+        }
+
+        statements present in if block will be executed only when expression is returning true.
+
+    if else:
+
+        Syntax:
+
+            if (expression) {
+                // Statements...
+            } else {
+                // Statements...
+            }
+    
+        > If expression is true, statements present in if will be executed, otherwise statements present in else will be executed.
+
+    if else if: > 2 scenarios
+
+        Syntax:
+
+            if (expression) {
+                // Statements
+            } else if (expression) {
+                Statements..
+            } else if (expression) {
+                Statements
+            } else {
+                Statements
+            }

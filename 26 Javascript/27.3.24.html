@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label>Number 1:</label>
+        <input type="text" placeholder="Number1" id="number1" />
+    </div>
+    <div>
+        <label>Number 2:</label>
+        <input type="number" placeholder="Number2" id="number2" />
+    </div>
+    <button onclick="sum()">Calculate</button>
+
+    <p id="result"></p>
+    <script>
+        
+        function sum() {
+            var num1 = document.getElementById('number1').value;
+            var num2 = document.getElementById('number2').value;
+
+            document.getElementById('result').innerHTML = Number(num1) + Number(num2);
+        }
+
+        function getFullName(firstName = '', lastName = '') {
+            return firstName.toUpperCase() + ' ' + lastName.toUpperCase();
+        }
+
+        var fullName = getFullName('Lokesh', 'K');
+
+        console.log(fullName);
+
+        var fullName2 = getFullName('Preethi');
+
+        console.log(fullName2);
+
+        var count = 10;
+
+        count++;
+
+        count++;
+
+        count++;
+
+        count--;
+
+        count--;
+
+        console.log(count);
+
+        var sum = 0;
+
+        var arr = [5, 7, 3, 5, 8];
+
+        sum += arr[0];
+
+        sum += arr[1];
+
+        sum += arr[2];
+
+        sum += arr[3];
+
+        sum += arr[4];
+
+        console.log(sum);
+
+        console.log(1000 !== 1000);
+
+
+        var result = 'Bhargav' === 'Bhargav N' ? 'Names are matching' : 'Names are not matching';
+
+        console.log(result);
+
+    </script>
+
+</body>
+</html>

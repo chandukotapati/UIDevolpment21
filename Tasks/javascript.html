@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a1 {
+       /* border: 2px solid darkorchid;*/
+        padding: 10px;
+        display: flex;
+        column-gap: 150px;
+        line-height: 60px;
+        margin-bottom: 10px;
+        font-size: larger;
+        font-weight: bold;
+        
+    }
+
+    .b1 {
+        position: relative;
+        left: 250px;
+    }
+
+
+    .a2 {
+        border: 5px solid hotpink;
+        padding: 10px;
+        display: flex;
+        column-gap: 180px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+
+       
+    }
+
+    .c1,
+    .c2 {
+        position: relative;
+        left: 10px;
+        line-height: 50px;
+    }
+
+    .c3 {
+
+        line-height: 50px;
+    }
+
+    .c4 {
+        position: relative;
+        right: 25px;
+        line-height: 50px;
+    }
+
+    .c6 {
+        position: relative;
+        right: 80px;
+        line-height: 50px;
+    }
+
+    .c5 {
+        position: relative;
+        right: 40px;
+        line-height: 50px;
+    }
+</style>
+
+<body>
+    <section class="a1">
+
+        <div class="b1">Deparature</div>
+        <div class="b1">Duration</div>
+        <div class="b1">Arrival</div>
+        <div class="b1">Rating</div>
+        <div class="b1">Fare</div>
+        <div class="b1">Seats Avalible</div>
+
+
+    </section>
+    <section class="a2">
+        <!-- <div> <h3>APSRTC</h3> </div>
+        <div class="c1">18:00pm</div>
+        <div class="c2">12:50m</div>
+        <div class="c3">08:00am</div>
+        <div class="c4">4.4*</div>
+        <div class="c5">INR1200</div>
+        <div class="c6">55<small>SeatsAvalible</small></div> -->
+    </section>
+
+    <section class="a2">
+        <!-- <div>
+            <h4>ORANGE</h4>
+        </div>
+        <div class="c1">11:00pm</div>
+        <div class="c2">09:50m</div>
+        <div class="c3">10:00am</div>
+        <div class="c4">3.4*</div>
+        <div class="c5">INR900</div>
+        <div class="c6">70<small>Seats Avalible</small></div> -->
+    </section>
+
+    <section class="a2">
+        <!-- <div>
+            <h3> TSRTC. </h3>
+        </div>
+        <div class="c1">09:00pm</div>
+        <div class="c2">10:29m</div>
+        <div class="c3">03:50am</div>
+        <div class="c4">4.2*</div>
+        <div class="c5">INR1500</div>
+        <div class="c6">33<small>Seats Avalible</small></div> -->
+    </section>
+
+    <section class="a2">
+        <!-- <div>
+            <h4>GAURDA</h4>
+        </div>
+        <div class="c1">07:00pm</div>
+        <div class="c2">11:50m</div>
+        <div class="c3">05:00am</div>
+        <div class="c4">4.8*</div>
+        <div class="c5">INR 500</div>
+        <div class="c6">50<small>Seats Avalible</small></div> -->
+    </section>
+
+
+     <script>
+        var personInfo = {
+            Departure: '11:00pm',
+            Duration: '12:50m',
+            Arrival: '08:00am',
+            Rating: '4.4*',
+            Fare: 'INR1200',
+            seatsAvalible: '55 Seats Avalible'           
+            };
+
+            document.getElementsByClassName('a2').innerHTML =personInfo
+    </script> 
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+Javascript:
+
+World wide web - HTML, CSS & Javascript
+
+    HTML - Displaying the Content
+    CSS - Stylings
+    JS - Functionality for the content.
+
+File extension:
+
+    fileName.js
+
+ECMA Script: 
+
+    ES5 ES6
+
+> JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language and core technology of the Web, 
+alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.
+> Web browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some 
+servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js.
+> JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.
+
+Internal and External JavaScript
+
+    Internal JavaScript:
+    <script>
+        // JavaScript code...
+    
+    
+    </script>
+
+
+    External JavaScript:
+    <script src="relativePath"></script>
+
+Output Parameters
+> console.log(value);
+> document.getElementById(id);
+> window.alert(value);
+
+Variables: To store data temporarily.
+
+    var variableName = value;

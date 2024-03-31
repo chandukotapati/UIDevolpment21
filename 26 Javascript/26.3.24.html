@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="meetingName"></p>
+    
+    <script>
+
+        var firstName = 'Jayeesh';
+
+        var lastName;
+
+        console.log(firstName);
+
+
+        firstName = '1000.90';
+
+        console.log(typeof firstName);
+
+        var rank = 100;
+
+        console.log(typeof rank);
+
+        var isActive = false;
+
+        console.log(typeof isActive);
+
+        var meetingName = null;
+
+        var names = ['Pradeep', 'Karthik', 'Lokesh', 'Charan'];
+
+        console.log(names);
+
+        console.log(names[3]);
+
+        names[1] = 'Yashwanth';
+
+        console.log(names);
+
+        var person = ['Bhargav', 'Mean Stack', 'React-2404', '09:00 AM', 907890999, 709];
+
+        var nums = [90, 89, 67, 44, 23];
+
+        var matrices = [[89, 90], [90, 34], [67, 89]];
+
+
+        var personInfo = {
+            name: 'Bhargav',
+            courseName: 'Mean Stack',
+            batchName: 'React-2404',
+            startTime: '09:00AM',
+            mobileNo: 907890999,
+            isEnrolled: true,
+            id: 709,
+            address: {
+                area: 'Madhapur',
+                city: 'Hyderabad',
+                pincode: 500001
+            },
+            enrolledCourses: ['Mean Stack', 'DevOps']
+        };
+
+        console.log(personInfo['batchName'], personInfo.mobileNo);
+
+        console.log(personInfo.address.pincode);
+
+        var meetings = [
+            {
+                type: 'Recurring',
+                meetingName: 'Interview Schedule for Sasi Kumar',
+                meetingId: 81112621690
+            },
+            {
+                type: 'Recurring',
+                meetingName: 'Fs-Basic-2408 8 AM',
+                meetingId: 82827354115
+            },
+            {
+                type: 'Recurring',
+                meetingName: 'Angular-2401 7 AM',
+                meetingId: 84532407076
+            }
+        ];
+
+
+        document.getElementById('meetingName').innerHTML = meetings[2].meetingName;
+    </script>
+
+</body>
+</html>

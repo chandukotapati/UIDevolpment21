@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <style>
+        div{
+            border: 2px solid crimson;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        div:first-child{
+            /*moving only x axis*/
+            transform: translate(100px);
+
+             /*moving x axis and y axis*/
+             transform: translate(100px, 200px);
+
+             /*moving only y axis*/
+             transform: translate(0px, 400px);
+        }
+    </style>
+</head>
+<body>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+</body>
+</html>

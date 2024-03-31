@@ -1,0 +1,57 @@
+Variables: Variables are containers for storing information. 
+
+    Syntax:
+
+        var variableName; // Variable Declaration
+
+        variableName = value // Variable Initialization
+
+        var variableName = value; // Variable Definition
+
+Data Types: A data type is an attribute associated with a piece of data that tells a computer system how to interpret its value.
+
+Predefined data types:
+
+    String, Number, Undefined, null, Boolean.
+
+User defined data types:
+
+    Array, Object & Function
+
+Dynamic Typing: Assigning value to the Variable, during compilation time is called dynamic typing.
+
+Array: Collection of values.
+
+    Syntax:
+
+        var variableName = [value1, value2, value3, ..., valueN];
+                                0       1       2           n - 1
+
+    For accessing value from the array:
+
+        variableName[index]
+
+    For assigning value of an array:
+
+        variableName[index] = value;
+
+Object: Collection of Property values.
+
+    Syntax:
+
+        var variableName = {
+            property1: value1,
+            property2: value2,
+            property3: value3,
+
+
+            propertyN: valueN
+        };
+
+    For accessing value from the array:
+
+        variableName[propertyName]
+
+    For assigning value of an array:
+
+        variableName[propertyName] = value;

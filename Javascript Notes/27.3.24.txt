@@ -1,0 +1,103 @@
+Function: A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+
+    Syntax:
+
+        function functionName(parameter1 = defaultValue, parameter2 = defaultValue, ..., parameterN = defaultValue) {
+            // Block of code.
+        } - Function Definition
+
+
+        functionName(value1, value2, ..., valueN); -- Function Call.
+
+> return - Returns resultant from function definition to function call.
+>          It should be last line of statements in the function definition.
+
+Events: User actions are called events.
+
+click
+keyup
+change
+mouseover
+mouseout
+
+    Syntax:
+
+        <tagName attribute=value/>
+
+            attribute - event
+
+            value - function call.
+
+Default Parameters: When we don't pass value from function call to function definition, js engine picks the default value of a parameter.
+
+    Syntax:
+
+        function functionName(parameter1 = defaultValue) {
+
+        }
+
+        functionName();
+
+Operators:
+1. Arithematic Operators
+1. Assignment Operators
+3. Comparision Operators
+4. Logical Operators
+
+1. Arithematic Operators:
+
+> Addition
+> Subtraction
+> Division
+> Multiplication
+> Increment: Increments the current value by 1.
+
+    Syntax:
+
+        variableName++; // variableName = variableName + 1;
+
+> Decrement: Decrements the current value by 1.
+
+    Syntax:
+
+        variableName-- // variableName = variableName - 1;
+
+Assignment Operators:
+
+= -> Assigns right side value to left side variable.
++= 
+-=
+*=
+/=
+%=
+
+Comparision Operators:
+
+== - Compares left statement with right statement, returns true if both are matching else false
+=== - Triple Equal to - Compare both value and data types. If both are matching it returns true otherwise false.
+
+!= - Not Equal to - If values are not matching, it returns true otherwise false.
+!== - Not Double Equal to - If values or data types are not matching, it returns true otherwise false.
+
+>
+<
+>=
+<=
+
+? - Ternary Operator
+
+    Syntax:
+
+        expression ? true statement : false statement
+
+Logical Operators:
+
+&& - AND
+|| - OR
+! - Not
+
+&& AND - If all the expressions are returning true it returns true otherwise false.
+
+|| OR - If any of the expression is returning true, it returns true otherwise false.
+
+! NOT - 
