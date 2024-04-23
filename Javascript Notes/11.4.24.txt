@@ -1,0 +1,76 @@
+Callback Functions: A function defintion which is passed a parameter to other function is called as callback function.
+
+    Syntax:
+
+        function functionName1() {
+
+        }
+
+        function functionName2(func) {
+
+            func();
+
+        }
+
+        functionName2(functionName1);
+
+Callback Hell: Writing one function inside other function and repeating the same for multiple times.
+
+        function functionName1() {
+
+        }
+
+        function functionName2(func1) {
+            func1();
+        }
+
+        function functionName3(func2) {
+            func2()
+        }
+
+        function functionName4(func3) {
+            func3()
+        }
+
+        functionName4(functionName3)
+
+ES6 - Promises
+
+ES7 - Async Await
+
+Promise: A Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed.
+
+    Syntax:
+
+        const promiseObj = new Promise(function(resolve, reject) {
+            if () {
+                resolve(resolved value);
+            } else {
+                reject(reason for rejection);
+            }
+        });
+
+        promiseObj.then(function(resolvedValue) {
+
+        }).catch(function(reason){ 
+
+        });
+
+    > If we call resolve function, source code in then block will be executed.
+    > If we call reject function, source code in catch block will be executed.
+
+1. Login 
+
+setTimeout(function() {
+
+}, time);
+
+try {
+    // Source code needs to be written here..
+} catch(error) {
+
+}
+
+async function functionName() {
+    await functionName();
+}

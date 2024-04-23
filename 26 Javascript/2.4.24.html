@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 10px;
+            width: 21%;
+            margin: 20px;
+            /* 5px rounded corners */
+        }
+
+        /* Add rounded corners to the top left and the top right corner of the image */
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+        #users {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="deleteAll()">Delete All</button>
+    <div id="container">
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+        <p>Loops are used in JavaScript to perform repeated tasks based on a condition.</p>
+    </div>
+
+    <div id="courses">
+
+    </div>
+
+    <div id="userInfo">
+        <h1>User Info</h1>
+    </div>
+
+    <div id="users">
+        
+    </div>
+    <script>
+
+        let i = 0;
+        while (i < 10) {
+            console.log('Iteration: ', i);
+            i++;
+        }
+
+        function deleteAll() {
+            const container = document.getElementById('container');
+
+            while (container.firstChild) {
+                container.removeChild(container.lastChild);
+            }
+        }
+
+        var j = 0;
+        do {
+            console.log('Inside do while loop.', j);
+            j++;
+        } while (j < 5);
+
+        const users = [
+            {
+                "id": 1,
+                "name": "Leanne Graham",
+                "username": "Bret",
+                "email": "Sincere@april.biz",
+                "address": {
+                    "street": "Kulas Light",
+                    "suite": "Apt. 556",
+                    "city": "Gwenborough",
+                    "zipcode": "92998-3874",
+                    "geo": {
+                        "lat": "-37.3159",
+                        "lng": "81.1496"
+                    }
+                },
+                "phone": "1-770-736-8031 x56442",
+                "website": "hildegard.org",
+                "company": {
+                    "name": "Romaguera-Crona",
+                    "catchPhrase": "Multi-layered client-server neural-net",
+                    "bs": "harness real-time e-markets"
+                }
+            },
+            {
+                "id": 2,
+                "name": "Ervin Howell",
+                "username": "Antonette",
+                "email": "Shanna@melissa.tv",
+                "address": {
+                    "street": "Victor Plains",
+                    "suite": "Suite 879",
+                    "city": "Wisokyburgh",
+                    "zipcode": "90566-7771",
+                    "geo": {
+                        "lat": "-43.9509",
+                        "lng": "-34.4618"
+                    }
+                },
+                "phone": "010-692-6593 x09125",
+                "website": "anastasia.net",
+                "company": {
+                    "name": "Deckow-Crist",
+                    "catchPhrase": "Proactive didactic contingency",
+                    "bs": "synergize scalable supply-chains"
+                }
+            },
+            {
+                "id": 3,
+                "name": "Clementine Bauch",
+                "username": "Samantha",
+                "email": "Nathan@yesenia.net",
+                "address": {
+                    "street": "Douglas Extension",
+                    "suite": "Suite 847",
+                    "city": "McKenziehaven",
+                    "zipcode": "59590-4157",
+                    "geo": {
+                        "lat": "-68.6102",
+                        "lng": "-47.0653"
+                    }
+                },
+                "phone": "1-463-123-4447",
+                "website": "ramiro.info",
+                "company": {
+                    "name": "Romaguera-Jacobson",
+                    "catchPhrase": "Face to face bifurcated interface",
+                    "bs": "e-enable strategic applications"
+                }
+            },
+            {
+                "id": 4,
+                "name": "Patricia Lebsack",
+                "username": "Karianne",
+                "email": "Julianne.OConner@kory.org",
+                "address": {
+                    "street": "Hoeger Mall",
+                    "suite": "Apt. 692",
+                    "city": "South Elvis",
+                    "zipcode": "53919-4257",
+                    "geo": {
+                        "lat": "29.4572",
+                        "lng": "-164.2990"
+                    }
+                },
+                "phone": "493-170-9623 x156",
+                "website": "kale.biz",
+                "company": {
+                    "name": "Robel-Corkery",
+                    "catchPhrase": "Multi-tiered zero tolerance productivity",
+                    "bs": "transition cutting-edge web services"
+                }
+            },
+            {
+                "id": 5,
+                "name": "Chelsey Dietrich",
+                "username": "Kamren",
+                "email": "Lucio_Hettinger@annie.ca",
+                "address": {
+                    "street": "Skiles Walks",
+                    "suite": "Suite 351",
+                    "city": "Roscoeview",
+                    "zipcode": "33263",
+                    "geo": {
+                        "lat": "-31.8129",
+                        "lng": "62.5342"
+                    }
+                },
+                "phone": "(254)954-1289",
+                "website": "demarco.info",
+                "company": {
+                    "name": "Keebler LLC",
+                    "catchPhrase": "User-centric fault-tolerant solution",
+                    "bs": "revolutionize end-to-end systems"
+                }
+            }
+        ];
+
+        for (let i = 0; i < users.length; i++) {
+            console.log('User ', i + 1);
+            for (let propertyName in users[i]) {
+                console.log(propertyName, ' ', users[i][propertyName]);
+            }
+        }
+
+        const courses = ['MEAN STACK', 'MERN STACK', 'DevOps', 'Python', 'Tableau', 'SAP'];
+
+        for (let i = 0; i < courses.length; i++) {
+            console.log(courses[i]);
+            const coursesDiv = document.getElementById('courses');
+            const h3 = document.createElement('h3');
+            h3.innerHTML = courses[i];
+            coursesDiv.appendChild(h3);
+        }
+
+        const userInfo = {
+            "id": 5,
+            "name": "Chelsey Dietrich",
+            "username": "Kamren",
+            "email": "Lucio_Hettinger@annie.ca",
+            "address": {
+                "street": "Skiles Walks",
+                "suite": "Suite 351",
+                "city": "Roscoeview",
+                "zipcode": "33263",
+                "geo": {
+                    "lat": "-31.8129",
+                    "lng": "62.5342"
+                }
+            },
+            "phone": "(254)954-1289",
+            "website": "demarco.info",
+            "company": {
+                "name": "Keebler LLC",
+                "catchPhrase": "User-centric fault-tolerant solution",
+                "bs": "revolutionize end-to-end systems"
+            }
+        };
+
+        for (let propertyName in userInfo) {
+            const userInfoDiv = document.getElementById('userInfo');
+            const p = document.createElement('p');
+            if (typeof userInfo[propertyName] === 'object') {
+                if (propertyName === 'address') {
+                    p.innerHTML = propertyName + ': ' + userInfo[propertyName]['street'] + ', ' + userInfo[propertyName]['city'];
+                } else {
+                    p.innerHTML = propertyName + ': ' + userInfo[propertyName]['name'];
+                }
+            } else {
+                p.innerHTML = propertyName + ': ' + userInfo[propertyName];
+            }
+            userInfoDiv.appendChild(p);
+        }
+
+        const usersDiv = document.getElementById('users');
+        let str = '';
+        for (let i = 0; i < users.length; i++) {
+            str += `
+                <div class="card">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>${users[i].name}</b></h4>
+                        <p>${users[i].email}</p>
+                        <p>${users[i].company.name}</p>
+                    </div>
+                </div>
+            `;
+        }
+        usersDiv.innerHTML = str;
+    </script>
+</body>
+
+</html>

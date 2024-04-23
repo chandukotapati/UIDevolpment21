@@ -1,0 +1,25 @@
+String Methods:
+Length
+indexOf(string)
+lastIndexOf(string)
+slice(start, end)
+substr(start, len)
+toUpperCase()
+toLowerCase()
+concat(“ ”, str)                         //"Hello".concat(" ", "World!");
+charAt(index);
+
+
+    const variableName = '';
+
+    const variableName = "   '  ";
+
+    const variableName = new String(value);
+
+Date Methods:
+Get Methods								Set Methods
+getDate()								setDate()
+getDay()									setFullYear()
+getFullYear()								setHours()
+getHours()								setMonth()
+getMinutes()								setMinutes()

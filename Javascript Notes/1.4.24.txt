@@ -1,0 +1,37 @@
+functions
+Variables
+Events
+DOM
+Conditional Statements
+
+Switch: 
+
+    Syntax:
+
+        switch(expression) {
+            case string / number: {
+
+
+                break;
+            }
+            case string / number: {
+
+
+                break;
+            }
+            case string / number: {
+
+
+                break;
+            }
+
+            default: {
+
+            }
+        }
+
+break - It tells js engine to come out of switch statement.
+
+case - A particular scenario of source code.
+
+default - If none of the cases are true, default block will be executed.

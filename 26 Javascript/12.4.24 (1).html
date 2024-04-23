@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 15px;
+            width: 20.9%;
+            margin: 20px;
+            /* 5px rounded corners */
+        }
+
+        /* Add rounded corners to the top left and the top right corner of the image */
+        img {
+            border-radius: 5px 5px 0 0;
+            height: 200px;
+        }
+
+        #users {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Users</h1>
+    <div>
+        <button style="float: right; cursor: pointer; margin-bottom: 10px;"><a href="./add-user.html">Add User</a></button>
+        <br style="clear: none;"/>
+    </div>
+    <div>
+        <div id="users">
+
+        </div>
+    </div>
+    <script>
+
+        function fetchAllUsers() {
+            const httpRequest = new XMLHttpRequest();
+
+            httpRequest.onreadystatechange = function () {
+                if (httpRequest.readyState === 4 && httpRequest.status === 200) {
+                    const { users } = JSON.parse(httpRequest.responseText);
+                    const usersDiv = document.getElementById('users');
+                    let str = '';
+                    for (let i = 0; i < users.length; i++) {
+                        str += `
+                        <div class="card">
+                            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4>Name: <b>${users[i].name}</b></h4>
+                                <p>Email: ${users[i].email}</p>
+                                <p>Emp Code: ${users[i].empCode}</p>
+                                <p>Mobile No: ${users[i].mobile}</p>
+                                <p>Role: ${users[i].role}</p>
+                                <button onclick="editUser(${users[i].id})">Edit</button>
+                                <button onclick="deleteUser(${users[i].id})">Delete</button>
+                            </div>
+                        </div>
+                    `;
+                    }
+                    usersDiv.innerHTML = str;
+                }
+            }
+
+            httpRequest.open('GET', 'http://44.205.114.20:3000/api/v1/users');
+            httpRequest.send();
+        }
+
+        fetchAllUsers();
+
+        function deleteUser(userId) {
+            const httpRequest = new XMLHttpRequest();
+
+            httpRequest.onreadystatechange = function() {
+                if (httpRequest.status === 200 && httpRequest.readyState === 4) {
+                    alert('User has been deleted successfully.');
+                    fetchAllUsers();
+                }
+            }
+
+            httpRequest.open('DELETE', 'http://44.205.114.20:3000/api/v1/users/' + userId);
+            httpRequest.send();
+        }
+
+        function editUser(userId) {
+            window.location.href = './edit-user.html?userId=' + userId;
+        }
+    </script>
+
+</body>
+
+</html>

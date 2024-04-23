@@ -1,0 +1,43 @@
+Control Statements:
+
+Looping Statements: Loops are used in JavaScript to perform repeated tasks based on a condition. Conditions typically return true or false . A loop will continue running until the defined condition returns false .
+
+1. while
+2. do while
+3. for
+4. forEach
+5. for in
+
+1. while: Executes the statments until the condition becomes false.
+
+    Syntax:
+
+        while(expression) {
+            // Statements...
+        }
+
+2. do while: Executes the statments until the condition becomes false. But if condition is becoming for every iteration it executes statments for one time.
+
+    Syntax:
+
+        do {
+            // Statements...
+        } while(expression);
+
+3. for: Executes the statments until the condition becomes false.
+
+    Usecase: We will be using this we have define no of iterations.
+
+    Syntax:
+
+        for (initialization; condition; increment/decrement) {
+            // Statements...
+        }
+
+4. for in: Iterate collection of properties present in object.
+
+    Syntax:
+
+        for (let key in objectName) {
+            objectName[key];
+        }

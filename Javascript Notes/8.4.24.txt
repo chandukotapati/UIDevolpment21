@@ -1,0 +1,71 @@
+Function Constructor:
+
+    function functionName() {
+
+        // Statements...
+
+        return value;
+    }
+
+Anonymous Function: A function without a name is called Anonymous function.
+
+    Syntax:
+
+        const variableName = function() {
+
+            // Statements...
+
+            return value;
+        } - Function Definition
+
+        variableName() - Function Call.
+
+        variableName() - Function Call.
+
+IIFE: Immediately Invokable Function Expression: A function which is invoked by itself.
+
+    Syntax:
+
+        (function(property1, property2, property3, ..., propertyN) {
+            // Statements...
+
+        })(value1, value2, value3, ..., valueN);
+
+> Return keyword is not available.
+> Function is called only for once.
+
+Arrow Function:
+
+> If there is only one statement in function, we can ignore in writing curly braces and return keyword.
+> Instead of function keyword we can use => operator.
+
+    Syntax:
+
+        const functionName = function() {
+                // Statements...
+            return;
+        }
+
+        const functionName = () => expression;
+
+Callback Function: A function which is invoked by other function is called callback function.
+
+    function functionName(
+        
+    ) {
+        ///
+
+        callbackFunc();
+
+    }
+
+    function functionName2() {
+
+
+    }
+
+    functionName(functionName2);
+
+Higher Order Function: A function which takes another function as an argument or returns a function is known as a higher order function. 
+
+Closure: 

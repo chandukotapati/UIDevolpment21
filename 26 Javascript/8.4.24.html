@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Price: <span id="price"></span></p>
+
+    <p>Start Time: <span id="startTime"></span></p>
+
+    <p>End Time: <span id="endTime"></span></p>
+
+    
+    <script>
+
+        const flightDetails = {
+            flightName: 'Air India Express',
+            price: 4637,
+            arrival: 'HYD Hyderabad, India',
+            departure: 'PNQ Pune, India',
+            discount: 5,
+            startTime: '2024-04-08T17:10:09.229Z',
+            endTime: '2024-04-08T02:45:26.874Z',
+            getDiscountedPrice: function() {
+                return parseInt(this.price - (this.price * this.discount / 100));
+            },
+            getStartTime: function() {
+                const dateObj = new Date(this.startTime);
+                return `${dateObj.getHours()}:${dateObj.getMinutes()}`;
+            },
+            getEndTime: function() {
+                const dateObj = new Date(this.endTime);
+                return `${this.appendZero(dateObj.getHours())}:${this.appendZero(dateObj.getMinutes())}`;
+            },
+            appendZero: (value) => value.toString().length === 1 ? '0' + value : value
+        };
+
+        document.getElementById('price').innerHTML = flightDetails.getDiscountedPrice();
+
+        document.getElementById('startTime').innerHTML = flightDetails.getStartTime();
+
+        document.getElementById('endTime').innerHTML = flightDetails.getEndTime();
+
+        var getEndTime = () => {
+            const dateObj = new Date(flightDetails.endTime);
+            return `${flightDetails.appendZero(dateObj.getHours())}:${flightDetails.appendZero(dateObj.getMinutes())}`;
+        };
+
+        console.log(flightDetails);
+
+        (function() {
+            console.log('In IIFE');
+        })();
+
+
+        function processData(callbackFnc) {
+
+            setTimeout(function() {
+                callbackFnc();
+            }, 4000);
+            
+        }
+
+        function displayOutput() {
+            console.log('Processed output successfully');
+        }
+
+        processData(displayOutput);
+
+        var names = ['Harish', 'Karthik', 'Lokesh'];
+
+        for (let i = 0; i < names.length; i++) {
+            console.log(names[i]);
+        }
+
+        function a(name) {
+            console.log(name)
+        }
+
+        names.forEach(a);
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const ids = [2, 9, 10];
+
+        console.log(ids.toString());
+
+        ids.push(3);
+
+        ids.push(6);
+
+        ids.push(7);
+
+        console.log(ids);
+
+        ids.pop();
+
+        console.log(ids);
+
+        ids.splice(1, 2, 99, 88);
+
+        console.log(ids);
+
+        const ids2 = [90, 67, 78, 45, 37];
+
+        const ids3 = [888];
+
+        const concatedIds = ids.concat(ids2, ids3);
+
+        console.log(concatedIds);
+
+        console.log(ids2.sort().reverse());
+
+        console.log(...ids);
+
+        const eIds  = [...ids];
+
+        console.log(eIds);
+
+        var employee = {
+            name: 'Karthik',
+            salary: 85000,
+            designation: 'Team Lead'
+        };
+
+        var employee2 = {...employee};
+
+        employee2.location = 'Madhapur';
+
+        console.log(employee, employee2);
+
+
+        function displayValues(p1, p2, ...restValues) {
+            console.log(p1, p2, restValues);
+        }
+
+        displayValues(10, 20, 30, 78, 90);
+
+        const employees = [
+            {
+                name: 'Karthik',
+                salary: 85000,
+                designation: 'Team Lead'
+            },
+            {
+                name: 'Ganesh',
+                salary: 90000,
+                designation: 'Team Lead'
+            },
+            {
+                name: 'Dinesh',
+                salary: 50000,
+                designation: 'Senior Software Engineer'
+            }
+        ];
+
+        const employeex1 = employees[0];
+
+        const employeex2 = employees[1];
+
+        const employee3 = employees[2];
+
+        const [emp1, emp2] = employees;
+
+        const { name, salary } = emp1;
+
+        console.log(name, salary);
+
+        let mobileNo = '9032345290';
+
+        let formattedMobileNo = '+91 903 234 5245';
+
+        mobileNoArr = mobileNo.split('');
+
+        const [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10] = mobileNoArr;
+
+        formattedMobileNo = '+91' + ' ' + n1 + n2 + n3 + ' ' + n4 + n5 + n6 + ' ' + n7 + n8 + n9 + n10;
+
+        console.log(formattedMobileNo);
+
+        const formattedMobileNo2 = `+91 ${n1}${n2}${n3} ${n4}${n5}${n6} ${n7}${n8}${n9}${n10}`;
+
+        const formattedMobileNo3 = `+91 ${mobileNo.slice(0, 3)} ${mobileNo.slice(3, 6)} ${mobileNo.slice(6, 10)}`;
+
+        console.log(formattedMobileNo3);
+
+
+    </script>
+</body>
+</html>

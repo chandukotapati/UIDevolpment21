@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="errorMsg"></p>
+    <script>
+
+        function loginPromiseFunc() {
+            const loginPromise = new Promise(function(resolve, reject) {
+            let isCredentialsValid = true;
+                setTimeout(function() {
+                    if (isCredentialsValid) {
+                        resolve('Valid credentials');
+                    } else {
+                        reject('Invalid crendentials');
+                    }
+                }, 2000);
+            });
+            return loginPromise;
+        }
+
+        function getProfilePromiseFunc() {
+            const getProfilePromise = new Promise(function(resolve, reject) {
+                let isProfileAvailable = true;
+                setTimeout(function() {
+                    if (isProfileAvailable) {
+                        resolve({name: 'Ganesh', email: 'ganesh@gmail.com', city: 'Hyderabad'});
+                    } else {
+                        reject('Unable to fetch profile details.');
+                    }
+                }, 2000);
+            });
+            return getProfilePromise;
+        }
+
+        // (function() {
+        //     loginPromiseFunc().then(function(result) {
+        //         getProfilePromiseFunc().then(function(result) {
+        //             window.location.href = './home.html';
+        //         }).catch(function(error) {
+        //             document.getElementById('errorMsg').innerHTML = error;
+        //         });
+        //     }).catch(function(error) {
+        //         document.getElementById('errorMsg').innerHTML = error;
+        //     });
+        // })();
+
+        (async function() {
+            try {
+                let result = await loginPromiseFunc();
+                result = await getProfilePromiseFunc();
+                console.log(result);
+            } catch(error) {
+                console.log('In catch block', error);
+            }
+        })();
+
+        
+
+        // Promise.all([loginPromise, getProfilePromise]).then(function(result) {
+        //     console.log(result);
+        //         // window.location.href = './home.html';
+        //     }).catch(function(error) {
+        //         document.getElementById('errorMsg').innerHTML = error;
+        //     });
+
+
+    </script>
+</body>
+</html>

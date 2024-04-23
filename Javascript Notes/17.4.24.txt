@@ -1,0 +1,42 @@
+Regular Expressions:
+
+Form Validations: Validating each form field in the form.
+
+Types of Validations:
+Required
+Minimum Length
+Maximum Length
+Pattern - Regular Expressions
+
+/^           $/
+
+^ - Starting of the string
+$ - ending of the string
+
+Character Classes
+. - Any characters except new line.
+
+Anchors
+Escaped Characters
+Groups and Look ahead
+Quantifies and Alternations
+
+/^[6-9]\d{9}$/
+
+/^
+[a-zA-Z0-9._%+-]+
+@[a-zA-Z0-9.-]+\.
+[a-zA-Z]{2,}$/
+
+Starting with 34 or 37, length 15 digits
+
+var creditCardNo = '349091345678912';
+
+if ((+creditCardNo.slice(0, 2) === 34 || +creditCardNo.slice(0, 2) === 37) && creditCardNo.length === 15) {
+
+}
+
+/^(?:3[47][0-9]{13})$/
+
+Starting with 4, length 13 or 16 digits.
+

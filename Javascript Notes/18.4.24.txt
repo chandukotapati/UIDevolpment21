@@ -1,0 +1,6 @@
+For validating forms
+
+1. Mandatory
+2. Minimum Length
+3. Maximum Length
+4. Pattern

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer-block {
+            border: 3px solid black;
+            width: 100px;
+            border-radius: 20px;
+            padding: 3px;
+            margin-bottom: 20px;
+        }
+        .inner-block {
+            border: 2px solid black;
+            border-radius: 50%;
+            padding: 50px;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            margin-right: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #red-btn {
+            background-color: red;
+        }
+        #orange-btn {
+            background-color: orange;
+        }
+        #green-btn {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Signal</h1>
+    <div id="outer-block">
+        <div class="inner-block" id="red">
+
+        </div>
+        <div class="inner-block" id="orange">
+
+        </div>
+        <div class="inner-block" id="green">
+
+        </div>
+    </div>
+    <button onclick="toggleSignal('red')" id="red-btn">Red</button>
+    <button onclick="toggleSignal('orange')" id="orange-btn">Orange</button>
+    <button onclick="toggleSignal('green')" id="green-btn">Green</button>
+    <button onclick="toggleSignal('reset')">Reset</button>
+    <script>
+
+        function toggleSignal(signalColor) {
+            // if (signalColor === 'red') { 
+            //     document.getElementById('red').style.backgroundColor = 'red';
+            //     document.getElementById('orange').style.backgroundColor = 'white';
+            //     document.getElementById('green').style.backgroundColor = 'white';
+            // } else if (signalColor === 'orange') {
+            //     document.getElementById('red').style.backgroundColor = 'white';
+            //     document.getElementById('orange').style.backgroundColor = 'orange';
+            //     document.getElementById('green').style.backgroundColor = 'white';
+
+            // } else if (signalColor === 'green') {
+            //     document.getElementById('green').style.backgroundColor = 'green';
+            //     document.getElementById('red').style.backgroundColor = 'white';
+            //     document.getElementById('orange').style.backgroundColor = 'white';
+            // }
+
+            switch(signalColor) {
+                case 'red': {
+                    document.getElementById('red').style.backgroundColor = 'red';
+                    document.getElementById('orange').style.backgroundColor = 'white';
+                    document.getElementById('green').style.backgroundColor = 'white';
+                    break;
+                }
+                case 'orange': {
+                    document.getElementById('red').style.backgroundColor = 'white';
+                    document.getElementById('orange').style.backgroundColor = 'orange';
+                    document.getElementById('green').style.backgroundColor = 'white';
+                    break;
+                }
+                case 'green': {
+                    document.getElementById('green').style.backgroundColor = 'green';
+                    document.getElementById('red').style.backgroundColor = 'white';
+                    document.getElementById('orange').style.backgroundColor = 'white';
+                    break;
+                } default: {
+                    document.getElementById('green').style.backgroundColor = 'white';
+                    document.getElementById('red').style.backgroundColor = 'white';
+                    document.getElementById('orange').style.backgroundColor = 'white';
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

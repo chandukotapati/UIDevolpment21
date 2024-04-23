@@ -1,0 +1,52 @@
+Array Methods:
+
+arrayName.toString();
+push(); - Inserts value into the array in next available index position.
+pop(); - Delete the value from last index position.
+splice(index_pos, delete_num, “new_value”, “new_value”); - Insert or delete values from any index position.
+concat(second_arr);
+Sort()
+Reverse()
+
+
+
+Spread Operator: Extracts each value from the array.
+
+    Syntax:
+
+        ...arrayName
+
+
+    http://localhost:3000/routeName/routeParamValue1/routeParamValue2?queryParam1=value1&queryParam2=value2;
+
+
+Rest Operator: Stores all the rest of the values passed to the function in one array.
+
+    function functionName(param1, param2, param3, ...restValues) {
+
+    }
+
+    functionName(value1, value2, value3, value4);
+
+    functionName(value1, value2, value3, value4, value5);
+
+    functionName(value1, value2, value3, value4, value5, value6);
+
+
+-> Rest Operator parameter should be defined as last parameter in the function definition.
+
+Array Destructing: Extracts values from array and stores in individual variables.
+
+    Syntax:
+
+        const [variableName1] = arrayName;
+
+Object Destructing: Extracts values from object and stores in individual variables.
+
+    Syntax: 
+
+        const { variableName1 } = objectName;
+
+Template Literals:
+
+    `string${variableName}string${variableName}`;

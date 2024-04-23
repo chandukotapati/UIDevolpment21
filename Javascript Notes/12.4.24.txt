@@ -1,0 +1,31 @@
+AJAX - Asynchronous Javascript XML - JSON
+
+JSON - Javascript Object Notation
+
+JSON String -> JSON Object
+
+    JSON.parse(value);
+
+JSON Object -> JSON String
+
+    JSON.stringify(value);
+
+readyState [0 - 4]
+
+0 - Request not initialized
+1 - Server Connection established.
+2 -	Request received.
+3 - Processing request.
+4 - Request finished and response ready.
+
+const httpRequest = new XMLHttpRequest();
+
+httpRequest.onreadystatechange = function() {
+
+}
+
+httpRequest.open(method, url);
+
+httpRequest.send(value?);
+
+    value - POST & PUT

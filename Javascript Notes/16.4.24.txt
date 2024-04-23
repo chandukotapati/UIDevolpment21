@@ -1,0 +1,44 @@
+Web Storage:
+
+1. Local Storage: Data will be available in the browser until we delete it.
+2. Session Storage: Data will be available until we close the current application.
+
+    Syntax:
+
+        localStorage.setItem(key, value); - Add data to localStorage.
+
+        localStorage.getItem(key) - Get data from localStorage.
+
+        localStorage.removeItem(key) - Removes value of a key.
+
+        localStorage.clear() - Clears whole data of localStorage.
+
+
+        sessionStorage.setItem(key, value); - Add data to sessionStorage.
+
+        sessionStorage.getItem(key) - Get data from sessionStorage.
+
+        sessionStorage.removeItem(key) - Removes value of a key.
+
+        sessionStorage.clear() - Clears whole data of sessionStorage.
+
+
+
+        var employee = {
+            name: 'Karthik',
+            getItem: function() {
+                return this.name;
+            }
+        }
+
+        employee.getName();
+
+Error Handling
+
+try {
+    // Error causing statements should be defined here..
+} catch(error) {
+
+} finally() {
+    
+}
